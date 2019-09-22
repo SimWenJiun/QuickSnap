@@ -71,6 +71,10 @@ namespace CardGames
         {
             //Open the game window
             SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
+			
+			//change font
+			SwinGame.LoadFontNamed("GameFont","Chunkfive.otf",24);
+			SwinGame.DrawText("" + myGame.Score(0), Color.White, "GameFont", 0, 30);
 
 			//Load the card images and set their cell details
             LoadResources();
